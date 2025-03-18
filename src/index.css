@@ -1,0 +1,31 @@
+
+:root {
+  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  @apply bg-gray-100 dark:bg-gray-900 text-gray-900 dark:text-white;
+}
+
+button {
+  @apply rounded-md px-4 py-2 font-medium transition-all duration-300;
+}
+
+button:hover {
+  @apply border-blue-500;
+}
+
+h1 {
+  @apply text-4xl font-bold;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    @apply bg-white text-gray-900;
+  }
+}
